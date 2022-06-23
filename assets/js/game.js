@@ -1,29 +1,16 @@
-// This will prompt user to put their name in and capture the user input
-//variable is a location where value gets stared 
-
 var playerName = window.prompt("What is your robot's name?");
+var playerHealth = 100;
+var playerAttack = 10;
 
-console.log(playerName);
+// You can also log multiple values at once like this
+console.log(playerName, playerAttack, playerHealth);
 
-console.log("This logs a string, good for leaving yourself a message");
+var enemyName = "Roborto";
+var enemyHealth = 50;
+var enemyAttack = 12;
 
-//this will do math and log 20
+var fight = function() {
+  window.alert("Welcome to Robot Gladiators!");
+};
 
-console.log(10+10);
-
-// what is this? - this is a way to make a sentence using the users input
-
-console.log("Our robot's name is " + playerName);
-
-// after user input, data will be stored in playerName. now we can call it during an alert
-
-window.alert(playerName);
-
-// this creates a function named "fight"
-
-function fight() {
-    window.alert("The fight has just begun!");
-}
-
-// fight();
-
+fight();
